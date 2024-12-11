@@ -1,13 +1,8 @@
 body{
-<<<<<<< HEAD
-    background-image: linear-gradient(#f50c, #f50e, #f508);
+    background-image: linear-gradient(rgba(236, 227, 223, 0.8), rgba(161, 149, 142, 0.933), rgba(158, 118, 98, 0.533));
     height: 100vh;
-    color: #000;
+    color: #080808;
     
-=======
-    background-color: rgb(250, 15, 15);
-    color: #141313;
->>>>>>> test
 }
 
 h1{
