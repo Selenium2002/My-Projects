@@ -1,0 +1,15 @@
+body{
+    background-color: black;
+    color: #fff;
+}
+
+h1{
+    font-size: 30px;
+    color: violet;
+    margin-bottom: 40px;
+}
+
+p{
+    font-size: 20px;
+    line-height: 40px;
+}
