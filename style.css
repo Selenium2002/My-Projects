@@ -1,11 +1,13 @@
 body{
-    background-image: linear-gradient(#f50c #f50e #f508 #f503 120deg);
-    color: #fff;
+    background-image: linear-gradient(#f50c, #f50e, #f508);
+    height: 100vh;
+    color: #000;
+    
 }
 
 h1{
     font-size: 30px;
-    color: violet;
+    color: teal;
     margin-bottom: 40px;
 }
 
