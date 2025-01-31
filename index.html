@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Array</title>
+    <style>
+        body{
+            background-color: rgb(59, 3, 171);
+            color : #fff;
+        }
+    </style>
+    <link href="./src/output.css" rel="stylesheet">
+</head>
+<body>
+  
+    <h2 id="demo"></h2>
+    
+    <script>
+        
+
+        // Global array that contains group of integers.
+        const arr = [500, 845, 9, 25, 67, 952, 94, 22, 124, 354, 156, 789, 61, 24, 37, 2, 45, 78, 687, 916];
+        
+        
+        // 1# Create a function which counts the number of integers that are divisible by 3.
+        let quotient = arr.filter((num) => {
+            if(num % 3 == 0) {
+                return num ;
+            };
+        });
+        console.log(quotient);
+        console.log(quotient.length);
+        
+        
+        
+        // 2# Create a function which gets the greatest integer in the array ## Using For Loop ##.
+        function greatest() {
+            let num = [];
+            for (i = 0; i < arr.length; i++) {
+                if (arr[i] > num) {
+                    num = arr[i];
+                }
+            }
+            document.write(`<pre>
+                
+### The greatest number of this array of integers is :  ${num}</pre>`)
+        }
+        greatest();
+
+        // Or by using a built up function called ## Math.max() ##
+        console.log(Math.max(...arr));
+        
+        
+        
+      
+        // 3# Create a function which gets the smallest integer in the array ## Using forEach() method ##.
+        
+        let min = arr[0];
+
+        arr.forEach((num) => {
+            if (num <= min) {
+                min = num;
+            }
+        })
+        document.getElementById("demo").innerHTML = `<pre>
+
+
+### The smallest number of this array of integers is :  ${min} </pre>`;
+            
+        // Or by using a built up function called ## Math.min() ##
+        console.log(Math.min(...arr));
+        
+       
+        
+
+        //Use some method or a built up function that retrieves name starts with specific characters from array of names of students.  
+        const names = 
+        [
+            "Ismail",
+            "Haidy",
+            "Mohammed",
+            "Hesham",
+            "Hamed",
+            "Ibrahim",
+            "Hend"
+        ];
+
+        //Using built up string method called ## indexOf() ## 
+           
+        let recognizedH = names.filter((nameWithH) => {
+            if (nameWithH.indexOf("H") === 0 ){
+                return nameWithH;
+            };
+        });    
+        console.log(recognizedH);
+        console.log(recognizedH.length);
+
+
+        //Using built up string method called ## startWith() ## 
+        let recognizedI = names.filter((nameWithI) => {if (nameWithI.startsWith("I")) {return nameWithI}});
+
+        document.write(`<h2><pre>
+
+### All students whose names start with letter "I" are :
+${recognizedI}</pre></h2>`);
+        
+    </script>
+</body>
+</html>
